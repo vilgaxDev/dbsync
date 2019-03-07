@@ -1,0 +1,29 @@
+{
+	"name": "scottjs/db-sync",
+	"description": "Helper scripts to quickly synchronise a local MySQL database with a remote database, as well as prepare a local database for deployment to a remote server.",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Scott Salisbury",
+			"email": "scottsalisbury@gmail.com"
+		}
+	],
+	"require": {
+		"interconnectit/search-replace-db": "^3.1"
+	},
+	"scripts": {
+		"database-update" : [
+			"vendor/scottjs/db-sync/database-update.sh"
+		],
+		"database-prepare" : [
+			"vendor/scottjs/db-sync/database-prepare.sh"
+		],
+		"database-import" : [
+			"vendor/scottjs/db-sync/database-import.sh"
+		],
+		"database-export" : [
+			"vendor/scottjs/db-sync/database-export.sh"
+		]
+	},
+	"minimum-stability": "dev"
+}
